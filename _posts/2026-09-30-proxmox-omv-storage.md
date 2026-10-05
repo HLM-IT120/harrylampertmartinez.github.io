@@ -1,4 +1,4 @@
-## Connecting a Proxmox to OpenMediaVault
+## Connecting Proxmox to OpenMediaVault
 
 **My Objective**
 This week, my goal was to expand the storage capacity of my home lab. To do this, I repurposed a laptop connected to a 4-bay Direct-Attached Storage (DAS) enclosure by installing OpenMediaVault 8. The objective was to configure this setup as a Network Attached Storage (NAS) node and connect it to my Proxmox server to handle container backups and media files for my phones and videos and a future Jellyfin project. 
