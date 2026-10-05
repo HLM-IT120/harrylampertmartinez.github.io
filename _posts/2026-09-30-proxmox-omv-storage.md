@@ -26,3 +26,4 @@ nano /etc/pve/storage.cfg
 #    export /export/backup
 #    server 192.168.1.100
 #    content backup
+```
