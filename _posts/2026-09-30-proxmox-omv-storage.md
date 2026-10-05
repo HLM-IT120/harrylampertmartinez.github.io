@@ -17,9 +17,8 @@ This required a multi-step troubleshooting approach:
 *   **The Permission Denied (500) Fix:** In the OpenMediaVault dashboard, I navigated to the NFS share settings and added `no_root_squash` to the extra options field. **Why did this work?** By default, NFS has a security feature that "squashes" (downgrades) requests from a root user into a standard, unprivileged anonymous user. Because Proxmox requires root-level privileges to mount the remote file system, adding `no_root_squash` tells the NAS to trust the Proxmox root user.
 *   **The Network Hang Fix:** To fix the issue where Proxmox would hang if OMV was offline, I had to boot Proxmox into recovery mode, remount the file system as read-write, and edit the Proxmox storage configuration file. 
 
-Here is the command I used to open the configuration file and safely comment out the missing network share so the server could boot:
+Here is the steps I used to open the configuration file and safely comment out the missing network share so the server could boot:
 
-```bash
 # Open the storage configuration file in the Nano text editor
 nano /etc/pve/storage.cfg
 
@@ -28,4 +27,3 @@ nano /etc/pve/storage.cfg
 #    export /export/backup
 #    server 192.168.1.100
 #    content backup
-```
