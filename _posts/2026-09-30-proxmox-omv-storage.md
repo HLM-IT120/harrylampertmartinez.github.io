@@ -4,9 +4,11 @@
 This week, my goal was to expand the storage capacity of my home lab. To do this, I repurposed a laptop connected to a 4-bay Direct-Attached Storage (DAS) enclosure by installing OpenMediaVault 8. The objective was to configure this setup as a Network Attached Storage (NAS) node and connect it to my Proxmox server to handle container backups and media files for my phones and videos and a future Jellyfin project. 
 
 **The Hurdle**
-I immediately hit a wall on two fronts: physical hardware and network permissions. 
+Since I'm still pretty new to this and my friends haven't really touched OMV yet, I had to lean on resources like YouTube and Gemini to read through documentation and figure out solutions. 
 
-First, my Proxmox server refused to boot properly. The boot sequence would hang indefinitely. Once I got past the hardware issue and finally attempted to connect Proxmox to the new OMV NAS over the network via NFS, Proxmox threw a strict **"Permission denied (500)"** error. on top of this I discovered that if the OMV laptop wasn't powered on and ready, the Proxmox server would hang during its boot sequence because it was waiting for a network share that didn't exist.
+Right out of the gate, I hit a wall on two fronts: physical hardware and network permissions. 
+
+First, my Proxmox server refused to boot properly. The boot sequence would hang indefinitely. Once I got past the hardware issue and finally attempted to connect Proxmox to the new OMV NAS over the network via NFS, Proxmox threw a strict **"Permission denied (500)"** error. On top of this, I discovered that if the OMV laptop wasn't powered on and ready, the Proxmox server would hang during its boot sequence because it was waiting for a network share that didn't exist.
 
 **The Solution**
 This required a multi-step troubleshooting approach:
