@@ -5,7 +5,7 @@ date: 2026-10-08 12:00:00 -0700
 categories: [networking, storage, homelab]
 ---
 
-## Week 2: Homelab Storage Architecture & Networking Fundamentals
+## Homelab Storage Architecture & Networking Fundamentals
 
 This week, my coursework progressed from data storage architecture to core networking fundamentals. Below is a breakdown of what I explored and documented this week.
 
