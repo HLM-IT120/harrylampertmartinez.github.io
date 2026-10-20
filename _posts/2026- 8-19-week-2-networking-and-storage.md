@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Week 2: Homelab Storage Architecture & Networking Fundamentals"
-date: 2026-8-19 12:00:00 -0700
+date: 2026- 8-19 12:00:00 -0700
 categories: [networking, storage, homelab]
 ---
 
