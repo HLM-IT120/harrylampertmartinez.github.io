@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Homelab Storage Architecture & Networking Fundamentals"
+title: Homelab Storage Architecture & Networking Fundamentals
 date: 2026-10-08 12:00:00 -0700
 categories: [networking, storage, homelab]
 ---
