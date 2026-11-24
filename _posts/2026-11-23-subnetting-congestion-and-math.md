@@ -1,7 +1,7 @@
 ## Subnetting for Congestion Control and IPv4 Math
 
 ** My Objective **
-This week, my goal was to connect networking concepts and subnetting math through my Divide & Conquer questions. I learned how subnet masks help relieve network congestion on a segment and how the math works once a question shifts into calculation—especially.
+This week, my goal was to connect networking concepts and subnetting math through my Divide & Conquer questions. I learned how subnet masks help relieve network congestion on a segment and how the math works when a question shifts into calculation—especially on power-of-two block boundaries.
 
 ** The Hurdle **
 At first, subnetting felt split between big-picture concepts and number crunching. On one side, you have why subnets exist—like separating smart home gadgets or guest devices from personal computers and phones, and keeping broadcast traffic from flooding every device at once. On the other side, when a problem asks for the Network IP, Broadcast IP, First Host IP, Last Host IP, Next Network IP, and usable host count on `10.1.1.48/27`, or asks why every group size lands on `128`, it becomes much more math-heavy.
@@ -26,3 +26,6 @@ Target host .48 falls between .32 and .64:
 - Broadcast IP:      10.1.1.63
 - Next Network IP:   10.1.1.64
 - Usable addresses:  32 - 2 = 30
+```
+* ** Resolving Post-Move BIOS, Display & Boot-Drop Issues: ** After moving with my GPU out, adjusting BIOS settings alone didn't fix the missing boot drive. Putting the GPU back in got into Windows 11, but opening tools like Task Manager or using certain keys didn't respond right and the PC would drop back to BIOS after a few minutes, claiming no boot drive was detected—until I moved the HDMI cable from the motherboard port to a GPU port, which stabilized it. I'm also tracking slow Wi-Fi speeds (mostly kbps and peaking around 144 Mbps on a 1 Gbps connection) to discuss with the owner after Thursday.
+  ** Why did this work? ** Routing display output through the GPU port instead of the motherboard port aligned display/PCIe handling with the installed GPU so Windows 11 stayed stable rather than flaking out or dropping back to BIOS.
